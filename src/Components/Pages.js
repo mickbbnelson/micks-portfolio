@@ -5,7 +5,7 @@ import Projects from './Projects'
 
 const Pages = () => {
     return (
-        <div>
+        <div id='pages'>
         <Switch>
             <Route exact path="/about"><About/> </Route>
             <Route exact path="/contact"><Contact/> </Route>
