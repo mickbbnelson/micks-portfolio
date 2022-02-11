@@ -1,20 +1,20 @@
 const PortfolioFilter = (props) => {
   
-    const filterUpdate = (event) => {
+    const updateFilter = (event) => {
       event.preventDefault();
-      props.filterUpdate(event.target.value);
+      props.updateFilter(event.target.value);
     } 
       
         return (
           <div className="center">
-            <form onChange={filterUpdate}>
+            <form onChange={updateFilter}>
               <label>Filter by Category:</label>
               <select type="text" name="category" id="category-input"> 
                <option value="">All</option>
                 <option value="React">React</option>
                 <option value="JavaScript">JavaScript</option>
-                <option value="Ruby on Rails">Work</option> 
-                <option value="Ticketing Career">Work</option> 
+                <option value="Ruby on Rails">Ruby on Rails</option> 
+                <option value="Ticketing Career">Ticketing Career</option> 
               </select> 
             </form>
           </div>
