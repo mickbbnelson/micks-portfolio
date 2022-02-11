@@ -1,4 +1,5 @@
 import React from "react"
+import PortfolioFilter from "./PortfolioFilter"
 
 class Portfolio extends React.Component {
   
@@ -6,6 +7,9 @@ class Portfolio extends React.Component {
         return (
         <div>
             <h1>Portfolio</h1>
+            <>
+            <PortfolioFilter />
+            </>
         </div>
     )
 }}
