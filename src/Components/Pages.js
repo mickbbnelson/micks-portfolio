@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom'
 import About from './About'
 import Contact from './Contact'
-import Projects from './Projects'
+import Portfolio from './Portfolio'
 
 const Pages = () => {
     return (
@@ -9,7 +9,7 @@ const Pages = () => {
         <Switch>
             <Route exact path="/about"><About/> </Route>
             <Route exact path="/contact"><Contact/> </Route>
-            <Route exact path="/projects"><Projects/> </Route>
+            <Route exact path="/portfolio"><Portfolio/> </Route>
         </Switch>
         </div>
     )
