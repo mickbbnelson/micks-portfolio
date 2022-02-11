@@ -12,6 +12,20 @@ class Portfolio extends React.Component {
             filter: language
         })
     }
+
+    filteredDisplay(){
+        if (this.state.filter === '') {
+            console.log('all')
+        } else if (this.state.filter === 'React') {
+            console.log('React')
+        } else if (this.state.filter === 'JavaScript') {
+            console.log('JavaScript')
+        } else if (this.state.filter === 'Ruby on Rails') {
+            console.log('Ruby on Rails')
+        } else if (this.state.filter === 'Ticketing Career') {
+            console.log('Ticketing Career')
+        }
+    }
   
     render() {
         console.log(this.state)
@@ -20,6 +34,9 @@ class Portfolio extends React.Component {
             <h1>Portfolio</h1>
             <>
             <PortfolioFilter updateFilter={this.updateFilter}/>
+            </>
+            <>
+            {this.filteredDisplay()}
             </>
         </div>
     )
