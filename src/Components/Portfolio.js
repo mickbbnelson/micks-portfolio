@@ -1,7 +1,7 @@
 import React from "react"
 import PortfolioFilter from "./PortfolioFilter"
 import ReactProjects from "./ReactProjects"
-import JavaScriptProjects from "./JavaScriptProjects"
+import JavaScriptProjects from "./ReactProjects"
 import RubyProjects from "./RubyProjects"
 import MusicCareer from "./MusicCareer"
 
@@ -19,7 +19,7 @@ class Portfolio extends React.Component {
 
     filteredDisplay(){
         if (this.state.filter === '') {
-            console.log('all')
+            return [<ReactProjects />, <JavaScriptProjects />, <RubyProjects />, <MusicCareer />]
         } else if (this.state.filter === 'React') {
             return <ReactProjects />
         } else if (this.state.filter === 'JavaScript') {
