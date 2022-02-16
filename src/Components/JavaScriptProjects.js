@@ -2,7 +2,7 @@ const JavaScriptProjects = () => {
   
     return (
         <div>
-            <h1>React</h1>
+            <h1>JavaScript</h1>
         </div>
     )
 }

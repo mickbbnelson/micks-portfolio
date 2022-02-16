@@ -1,5 +1,9 @@
 import React from "react"
 import PortfolioFilter from "./PortfolioFilter"
+import ReactProjects from "./ReactProjects"
+import JavaScriptProjects from "./JavaScriptProjects"
+import RubyProjects from "./RubyProjects"
+import MusicCareer from "./MusicCareer"
 
 class Portfolio extends React.Component {
 
@@ -17,13 +21,13 @@ class Portfolio extends React.Component {
         if (this.state.filter === '') {
             console.log('all')
         } else if (this.state.filter === 'React') {
-            console.log('React')
+            return <ReactProjects />
         } else if (this.state.filter === 'JavaScript') {
-            console.log('JavaScript')
+            return <JavaScriptProjects />
         } else if (this.state.filter === 'Ruby on Rails') {
-            console.log('Ruby on Rails')
+            return <RubyProjects />
         } else if (this.state.filter === 'Ticketing Career') {
-            console.log('Ticketing Career')
+            return <MusicCareer />
         }
     }
   
